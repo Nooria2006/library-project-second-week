@@ -110,7 +110,7 @@ header {
 }
 
 .header-left small {
-    color: #8992a5;
+    color:#68748a;
 }
 
 .header-left h3 {
@@ -246,7 +246,7 @@ header {
     margin-top: 25px;
     margin-left: 45px;
     border: none;
-    background: #94a9cf;
+    background: #496db1;
     color: white;
     padding: 11px 25px;
     border-radius: 8px;
