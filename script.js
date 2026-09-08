@@ -1,4 +1,4 @@
-// Sidebar menu
+
 
 const menu = document.getElementById("menu");
 const sidebar = document.querySelector(".sidebar");
@@ -13,8 +13,6 @@ menu.addEventListener("click", function () {
 
 });
 
-
-// Search books
 
 const search = document.getElementById("search");
 const books = document.querySelectorAll(".book");
