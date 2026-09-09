@@ -4,49 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login - Digital Library System</title>
-    <!-- اتصال مستقیم و مطمئن به فایل استایل -->
     <link rel="stylesheet" href="./login.css">
-    <!-- اتصال به آیکون‌های گوگل و فیسبوک -->
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
 
     <div class="main-container">
-        <!-- بخش متن خوش‌آمدگویی بالای صفحه مربوط به کتابخانه -->
         <div class="welcome-section">
             <h1>Welcome to Digital Library System</h1>
             <p>Access thousands of books and resources in one click</p>
         </div>
 
-        <!-- کارت سفید رنگ فرم ورود -->
         <div class="login-card">
             <h2>Sign in to Your Account</h2>
-            
-            <!-- دکمه‌های ورود با شبکه های اجتماعی -->
             <div class="social-buttons">
                 <button class="social-btn fb"><i class="fab fa-facebook-f"></i></button>
                 <button class="social-btn google"><i class="fab fa-google"></i></button>
             </div>
-
-            <!-- کادرهای دریافت اطلاعات کاربر -->
             <form id="login-form">
                 <input type="text" id="email" placeholder="Library ID or Email" required>
                 <input type="password" id="password" placeholder="Enter your password" required>
-                
                 <button type="submit" class="btn-submit">SIGN IN</button>
-                
-                <div class="form-helpers">
+                   <div class="form-helpers">
                     <a href="#">Forgot password?</a>
-                    <label><input type="checkbox"> Remember me</label>
-                </div>
-            </form>
-
+                    <label><input type="checkbox">Remember me</label>
+                   </div>
+                   </form>
             <div class="or-divider">or</div>
+                <button class="btn-register">CREATE ACCOUNT</button>
+                </div>
 
-            <button class="btn-register">CREATE ACCOUNT</button>
-        </div>
-
-        <!-- لینک‌های پایین صفحه -->
         <div class="footer-links">
             <a href="#">Library Rules</a>
             <a href="#">About System</a>

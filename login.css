@@ -6,13 +6,15 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
     min-height: 100vh;
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
-                  url('library\ imge.jpeg');
+                  url('\ imge.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -25,6 +27,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    padding: 10px;
 }
 
 .welcome-section {
@@ -34,7 +38,7 @@ body {
 }
 
 .welcome-section h1 {
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     margin-bottom: 8px;
     font-weight: bold;
     text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
@@ -46,20 +50,20 @@ body {
 }
 
 .login-card {
-    background: rgba(255, 255, 255, 0.95); /* حالت شیشه‌ای ملایم سفید */
+    background: rgba(255, 255, 255, 0.95); 
     padding: 40px;
     border-radius: 16px;
     width: 100%;
-    max-width: 440px;
+    max-width: 500px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     text-align: center;
-    backdrop-filter: blur(5px); /* افکت جذاب شیشه‌ای */
+    backdrop-filter: blur(5px); 
 }
 
 .login-card form {
     display: flex;
     flex-direction:column;
-    gap:15px;
+    gap:10px;
     width:100%
 }
 .login-card h2 {
@@ -73,26 +77,34 @@ body {
     display: flex;
     justify-content: center;
     gap: 15px;
+    margin-top: 15px;
     margin-bottom: 25px;
 }
 
 .social-btn {
-    width: 46px;
-    height: 46px;
-    border: 1px solid #cbd5e1;
-    border-radius: 50%;
-    background: white;
+    width: 75px;
+    height: 48px;
+    border: 1px solid #f1f5f9;
+    border-radius: 8px;
+    background: #ffffff;
     cursor: pointer;
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+}
+
+.social-btn img {
+    height: 22px;
+    width: auto;
+    object-fit: containss;
 }
 
 .social-btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-color: #007bff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .social-btn.fb { color: #1877f2; }
@@ -157,7 +169,7 @@ input:focus {
 .btn-register {
     width: 100%;
     padding: 12px;
-    background: linear-gradient(to right, #0052d4, #4364f7, #6fb1fc);
+    background: linear-gradient(to right,#6fb1fc,#6fb1fc, #0052d4 );
     color: white;
     border: none;
     border-radius: 8px;
@@ -188,7 +200,7 @@ input:focus {
 .footer-links a:hover {
     color: white;
 }
-/* تنظیم چیدمان داخل دایره دکمه‌ها */
+
 .social-btn {
     display: inline-flex;
     justify-content: center;
@@ -196,14 +208,13 @@ input:focus {
     cursor: pointer;
 }
 
-/* رنگ آبی اصلی برای لوگوی فیسبوک */
 .social-btn.fb i {
     color: #1877f2;
     font-size: 1.2rem;
 }
 
-/* رنگ قرمز/نارنجی اصلی برای لوگوی گوگل */
 .social-btn.google i {
     color: #ea4335;
     font-size: 1.2rem;
-}
+ }
+ 
