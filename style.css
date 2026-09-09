@@ -37,6 +37,11 @@ body {
     font-size: 30px;
 }
 
+.logo-img {
+    width:120px;
+    height: 120px;
+    object-fit: contain;
+}
 .logo h3 {
     font-size: 18px;
 }

@@ -34,27 +34,20 @@ search.addEventListener("input", function () {
     });
 
 });
-// ==========================================
-// کدهای جدید برای فعال کردن دکمه‌های منو
-// ==========================================
 
-// ۱. گرفتن دکمه‌ها از فایل HTML
 const btnDashboard = document.getElementById("btn-dashboard");
 const btnAllBooks = document.getElementById("btn-all-books");
 const btnMembers = document.getElementById("btn-members");
 
-// ۲. گرفتن بخش اصلی محتوای صفحه
 const mainContent = document.querySelector(".content");
 
-// ۳. کارکرد دکمه All Books
 if (btnAllBooks && mainContent) {
     btnAllBooks.addEventListener("click", function (event) {
-        event.preventDefault(); // جلوگیری از پرش صفحه
+        event.preventDefault(); 
         mainContent.innerHTML = "<h2>لیست همه کتاب‌ها</h2><p>این بخش مربوط به کتاب‌های کتابخانه است.</p>";
     });
 }
 
-// ۴. کارکرد دکمه Members
 if (btnMembers && mainContent) {
     btnMembers.addEventListener("click", function (event) {
         event.preventDefault();
