@@ -3,15 +3,11 @@
 const menu = document.getElementById("menu");
 const sidebar = document.querySelector(".sidebar");
 
+
 menu.addEventListener("click", function () {
-
-    if (sidebar.style.display === "none") {
-        sidebar.style.display = "block";
-    } else {
-        sidebar.style.display = "none";
-    }
-
+    sidebar.classList.toggle("show");
 });
+
 
 
 const search = document.getElementById("search");
