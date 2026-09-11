@@ -1,23 +1,31 @@
+
 const menu = document.getElementById("menu");
 const sidebar = document.querySelector(".sidebar");
 
+
+// Open and close sidebar
 menu.addEventListener("click", function () {
     sidebar.classList.toggle("show");
 });
 
+
+// Search books
 const search = document.getElementById("search");
 const books = document.querySelectorAll(".book");
 
 search.addEventListener("input", function () {
 
-    const value = search.value.toLowerCase();
+    const value = search.value.toLowerCase().trim();
 
     books.forEach(function (book) {
 
-        const title = book.querySelector("h3").textContent.toLowerCase();
+        const title = book
+            .querySelector("h3")
+            .textContent
+            .toLowerCase();
 
         if (title.includes(value)) {
-            book.style.display = "block";
+            book.style.display = "";
         } else {
             book.style.display = "none";
         }
@@ -26,29 +34,26 @@ search.addEventListener("input", function () {
 
 });
 
-const btnDashboard = document.getElementById("btn-dashboard");
-const btnAllBooks = document.getElementById("btn-all-books");
-const btnMembers = document.getElementById("btn-members");
 
-const mainContent = document.querySelector(".content");
+// Sidebar navigation
+const navLinks = document.querySelectorAll(".sidebar nav a");
 
-if (btnAllBooks && mainContent) {
-    btnAllBooks.addEventListener("click", function (event) {
-        event.preventDefault();
-        mainContent.innerHTML = "<h2>All Books</h2><p>This section contains all books in the library.</p>";
+navLinks.forEach(function (link) {
+
+    link.addEventListener("click", function () {
+
+        navLinks.forEach(function (item) {
+            item.classList.remove("active");
+        });
+
+        link.classList.add("active");
+
+
+        // Close sidebar on mobile
+        if (window.innerWidth <= 750) {
+            sidebar.classList.remove("show");
+        }
+
     });
-}
 
-if (btnMembers && mainContent) {
-    btnMembers.addEventListener("click", function (event) {
-        event.preventDefault();
-        mainContent.innerHTML = "<h2>Library Members</h2><p></p>";
-    });
-}
-
-if (btnDashboard) {
-    btnDashboard.addEventListener("click", function (event) {
-        event.preventDefault();
-        location.reload();
-    });
-}
+});

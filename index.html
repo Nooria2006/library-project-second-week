@@ -1,349 +1,400 @@
+```html
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Library Dashboard</title>
 
-<link rel="stylesheet" href="style.css">
+    <title>My Library Dashboard</title>
 
-<link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
 <div class="dashboard">
 
-<aside class="sidebar">
+    <!-- Sidebar -->
+    <aside class="sidebar">
 
-    <div class="logo">
-        <img src="book_img.png" alt="Library Logo" class="logo-img">
-        <h3>My Library</h3>
-    </div>
+        <div class="logo">
+            <img src="book_img.png" alt="Library Logo" class="logo-img">
+            <h3>My Library</h3>
+        </div>
 
-    <nav>
+        <nav>
 
-        <a href="#" class="active">
-            <i class="fa-solid fa-house"></i>
-            <span>Dashboard</span>
-        </a>
+            <a href="#" class="active">
+                <i class="fa-solid fa-house"></i>
+                <span>Dashboard</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-book"></i>
-            <span>All Books</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-book"></i>
+                <span>All Books</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-layer-group"></i>
-            <span>Categories</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>Categories</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-users"></i>
-            <span>Members</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-users"></i>
+                <span>Members</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-book-open"></i>
-            <span>Borrowed Books</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-book-open"></i>
+                <span>Borrowed Books</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-clock"></i>
-            <span>Due Books</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-clock"></i>
+                <span>Due Books</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-heart"></i>
-            <span>Favorite Books</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-heart"></i>
+                <span>Favorite Books</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-user"></i>
-            <span>My Account</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>My Account</span>
+            </a>
 
-        <a href="#">
-            <i class="fa-solid fa-gear"></i>
-            <span>Settings</span>
-        </a>
+            <a href="#">
+                <i class="fa-solid fa-gear"></i>
+                <span>Settings</span>
+            </a>
 
-    </nav>
+        </nav>
 
-    <div class="help">
-        <b>?</b>
-        <span>Need Help?</span>
-    </div>
+        <div class="help">
+            <b>?</b>
+            <span>Need Help?</span>
+        </div>
 
-</aside>
+    </aside>
 
-<main class="main">
-    <header>
 
-        <div class="header-left">
-            <button id="menu">
-                <i class="fa-solid fa-bars"></i>
-            </button>
+    <!-- Main -->
+    <main class="main">
+
+        <!-- Header -->
+        <header>
+
+            <div class="header-left">
+
+                <button id="menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+                <div>
+                    <small>
+                        <i class="fa-solid fa-house"></i>
+                        / Dashboard
+                    </small>
+
+                    <h3>Dashboard</h3>
+                </div>
+
+            </div>
+
+
+            <div class="header-right">
+
+                <div class="search">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="Search books..."
+                    >
+
+                </div>
+
+                <span class="account">
+                    <i class="fa-solid fa-user"></i>
+                    My Account
+                </span>
+
+                <i class="fa-solid fa-bell notification"></i>
+
+            </div>
+
+        </header>
+
+
+        <!-- Dashboard Content -->
+        <section class="content">
+
+            <h1>Welcome To My Library! 📚</h1>
+
+
+            <!-- Cards -->
+            <div class="cards">
+
+                <!-- Books by Category -->
+                <div class="card">
+
+                    <h3>Books by Category</h3>
+
+                    <div class="chart-row">
+
+                        <div class="donut donut1">
+                            <div></div>
+                        </div>
+
+                        <div class="list">
+
+                            <p>
+                                📘 Fiction
+                                <span>35%</span>
+                            </p>
+
+                            <p>
+                                📗 Science
+                                <span>20%</span>
+                            </p>
+
+                            <p>
+                                📕 History
+                                <span>15%</span>
+                            </p>
+
+                            <p>
+                                📙 Psychology
+                                <span>18%</span>
+                            </p>
+
+                            <p>
+                                📓 Technology
+                                <span>12%</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <button>MORE DETAILS</button>
+
+                </div>
+
+
+                <!-- Popular Books -->
+                <div class="card">
+
+                    <h3>Popular Books</h3>
+
+                    <div class="book-list">
+
+                        <p>
+                            📕 The Kite Runner
+                            <span>95%</span>
+                        </p>
+
+                        <p>
+                            📘 Atomic Habits
+                            <span>88%</span>
+                        </p>
+
+                        <p>
+                            📗 The Alchemist
+                            <span>82%</span>
+                        </p>
+
+                        <p>
+                            📙 Psychology of Money
+                            <span>76%</span>
+                        </p>
+
+                        <p>
+                            📓 Pride and Prejudice
+                            <span>70%</span>
+                        </p>
+
+                    </div>
+
+                    <button>VIEW ALL BOOKS</button>
+
+                </div>
+
+
+                <!-- Library Usage -->
+                <div class="card">
+
+                    <h3>Library Usage</h3>
+
+                    <div class="chart-row">
+
+                        <div class="donut donut2">
+                            <div></div>
+                        </div>
+
+                        <div class="list">
+
+                            <p>
+                                📖 Books Read
+                                <span>45%</span>
+                            </p>
+
+                            <p>
+                                🔖 Books Borrowed
+                                <span>25%</span>
+                            </p>
+
+                            <p>
+                                ❤️ Favorites
+                                <span>15%</span>
+                            </p>
+
+                            <p>
+                                📚 Saved Books
+                                <span>15%</span>
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <button>MORE DETAILS</button>
+
+                </div>
+
+
+                <!-- Reading Statistics -->
+                <div class="card reading">
+
+                    <h3>Reading Statistics</h3>
+
+                    <h2>
+                        72%
+                        <span>+8%</span>
+                    </h2>
+
+                    <p class="subtitle">
+                        Your reading progress this month
+                    </p>
+
+                    <div class="line-chart">
+
+                        <svg viewBox="0 0 500 180">
+
+                            <polyline
+                                points="
+                                0,145
+                                50,125
+                                100,135
+                                150,90
+                                200,110
+                                250,70
+                                300,95
+                                350,50
+                                400,75
+                                450,45
+                                500,20
+                                "
+                                fill="none"
+                                stroke="#39446d"
+                                stroke-width="3"
+                            />
+
+                        </svg>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recently Added Books -->
+            <div class="books-section">
+
+                <h2>Recently Added Books</h2>
+
+                <div class="books">
+
+                    <div class="book">
+
+                        <div class="cover">📕</div>
+
+                        <h3>The Kite Runner</h3>
+
+                        <p>Khaled Hosseini</p>
+
+                    </div>
+
+
+                    <div class="book">
+
+                        <div class="cover">📘</div>
+
+                        <h3>Atomic Habits</h3>
+
+                        <p>James Clear</p>
+
+                    </div>
+
+
+                    <div class="book">
+
+                        <div class="cover">📗</div>
+
+                        <h3>The Alchemist</h3>
+
+                        <p>Paulo Coelho</p>
+
+                    </div>
+
+
+                    <div class="book">
+
+                        <div class="cover">📙</div>
+
+                        <h3>Ikigai</h3>
+
+                        <p>Héctor García</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Footer -->
+        <footer class="footer">
 
             <div>
-                <small>
-                    <i class="fa-solid fa-house"></i>
-                    / Dashboard
-                </small>
-
-                <h3>Dashboard</h3>
+                <p>© 2026 My Library. All Rights Reserved.</p>
             </div>
 
-        </div>
-
-
-        <div class="header-right">
-            <div class="search">
-
-                <i class="fa-solid fa-magnifying-glass"></i>
-
-                <input
-                    type="text"
-                    id="search"
-                    placeholder="Search books..."
-                >
-
-            </div>
-            <span class="account">
-                <i class="fa-solid fa-user"></i>
-                My Account
-            </span>
-            <i class="fa-solid fa-bell notification"></i>
-
-        </div>
-
-    </header>
-    <section class="content">
-
-        <h1>Welcome To My Library! 📚</h1>
-        <div class="cards">
-            <div class="card">
-
-                <h3>Books by Category</h3>
-
-                <div class="chart-row">
-
-                    <div class="donut donut1">
-                        <div></div>
-                    </div>
-
-                    <div class="list">
-
-                        <p>
-                            📘 Fiction
-                            <span>35%</span>
-                        </p>
-
-                        <p>
-                            📗 Science
-                            <span>20%</span>
-                        </p>
-
-                        <p>
-                            📕 History
-                            <span>15%</span>
-                        </p>
-
-                        <p>
-                            📙 Psychology
-                            <span>18%</span>
-                        </p>
-
-                        <p>
-                            📓 Technology
-                            <span>12%</span>
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <button>MORE DETAILS</button>
-
-            </div>
-            <div class="card">
-
-                <h3>Popular Books</h3>
-
-                <div class="book-list">
-
-                    <p>
-                        📕 The Kite Runner
-                        <span>95%</span>
-                    </p>
-
-                    <p>
-                        📘 Atomic Habits
-                        <span>88%</span>
-                    </p>
-
-                    <p>
-                        📗 The Alchemist
-                        <span>82%</span>
-                    </p>
-
-                    <p>
-                        📙 Psychology of Money
-                        <span>76%</span>
-                    </p>
-
-                    <p>
-                        📓 Pride and Prejudice
-                        <span>70%</span>
-                    </p>
-
-                </div>
-
-                <button>VIEW ALL BOOKS</button>
-
-            </div>
-            <div class="card">
-
-                <h3>Library Usage</h3>
-
-                <div class="chart-row">
-
-                    <div class="donut donut2">
-                        <div></div>
-                    </div>
-
-                    <div class="list">
-
-                        <p>
-                            📖 Books Read
-                            <span>45%</span>
-                        </p>
-
-                        <p>
-                            🔖 Books Borrowed
-                            <span>25%</span>
-                        </p>
-
-                        <p>
-                            ❤️ Favorites
-                            <span>15%</span>
-                        </p>
-
-                        <p>
-                            📚 Saved Books
-                            <span>15%</span>
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <button>MORE DETAILS</button>
-
-            </div>
-            <div class="card reading">
-
-                <h3>Reading Statistics</h3>
-
-                <h2>
-                    72%
-                    <span>+8%</span>
-                </h2>
-
-                <p class="subtitle">
-                    Your reading progress this month
-                </p>
-
-                <div class="line-chart">
-
-                    <svg viewBox="0 0 500 180">
-
-                        <polyline
-                            points="
-                            0,145
-                            50,125
-                            100,135
-                            150,90
-                            200,110
-                            250,70
-                            300,95
-                            350,50
-                            400,75
-                            450,45
-                            500,20
-                            "
-                            fill="none"
-                            stroke="#39446d"
-                            stroke-width="3"
-                        />
-
-                    </svg>
-
-                </div>
-
+            <div class="footer-links">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Contact</a>
             </div>
 
-        </div>
-        <div class="books-section">
+        </footer>
 
-            <h2>Recently Added Books</h2>
-
-            <div class="books">
-
-
-                <!-- Book 1 -->
-                <div class="book">
-
-                    <div class="cover">📕</div>
-
-                    <h3>The Kite Runner</h3>
-
-                    <p>Khaled Hosseini</p>
-
-                </div>
-                <div class="book">
-
-                    <div class="cover">📘</div>
-
-                    <h3>Atomic Habits</h3>
-
-                    <p>James Clear</p>
-
-                </div>
-                <div class="book">
-
-                    <div class="cover">📗</div>
-
-                    <h3>The Alchemist</h3>
-
-                    <p>Paulo Coelho</p>
-
-                </div>
-
-                <div class="book">
-
-                    <div class="cover">📙</div>
-
-                    <h3>Ikigai</h3>
-
-                    <p>Héctor García</p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-</main>
+    </main>
 
 </div>
+
 
 <script src="script.js"></script>
 
 </body>
 </html>
+```
