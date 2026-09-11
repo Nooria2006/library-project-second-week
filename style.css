@@ -10,20 +10,10 @@ body {
     color: #34415d;
 }
 
-
-/* =========================
-   Dashboard
-========================= */
-
 .dashboard {
     display: flex;
     min-height: 100vh;
 }
-
-
-/* =========================
-   Sidebar
-========================= */
 
 .sidebar {
     width: 250px;
@@ -38,19 +28,11 @@ body {
         left 0.3s ease;
 }
 
-
-/* Desktop - Sidebar Closed */
-
 .sidebar.collapsed {
     width: 0;
     padding: 0;
     overflow: hidden;
 }
-
-
-/* =========================
-   Logo
-========================= */
 
 .logo {
     min-height: 90px;
@@ -71,11 +53,6 @@ body {
 .logo h3 {
     font-size: 18px;
 }
-
-
-/* =========================
-   Navigation
-========================= */
 
 nav a {
     display: flex;
@@ -113,11 +90,6 @@ nav .active i {
     border-radius: 8px;
 }
 
-
-/* =========================
-   Help
-========================= */
-
 .help {
     margin-top: 30px;
     padding: 18px;
@@ -149,20 +121,10 @@ nav .active i {
     margin-right: 8px;
 }
 
-
-/* =========================
-   Main
-========================= */
-
 .main {
     flex: 1;
     min-width: 0;
 }
-
-
-/* =========================
-   Header
-========================= */
 
 header {
     min-height: 110px;
@@ -192,9 +154,6 @@ header {
     margin-top: 7px;
 }
 
-
-/* Menu Button */
-
 #menu {
     border: none;
     background: none;
@@ -206,18 +165,12 @@ header {
     color: #68748a;
 }
 
-
-/* Header Right */
-
 .header-right {
     display: flex;
     align-items: center;
 
     gap: 18px;
 }
-
-
-/* Search */
 
 .search {
     width: 210px;
@@ -245,24 +198,15 @@ header {
 }
 
 
-/* Account */
-
 .account {
     color: #68748a;
 }
 
 
-/* Notification */
-
 .notification {
     color: #68748a;
     cursor: pointer;
 }
-
-
-/* =========================
-   Content
-========================= */
 
 .content {
     padding: 25px 30px;
@@ -274,10 +218,6 @@ header {
     font-size: 25px;
 }
 
-
-/* =========================
-   Cards
-========================= */
 
 .cards {
     display: grid;
@@ -303,10 +243,6 @@ header {
     margin-bottom: 25px;
 }
 
-
-/* =========================
-   Donut Chart
-========================= */
 
 .chart-row {
     display: flex;
@@ -337,9 +273,6 @@ header {
     border-radius: 50%;
 }
 
-
-/* Donut 1 */
-
 .donut1 {
     background: conic-gradient(
         #8b4de8 0 35%,
@@ -351,8 +284,6 @@ header {
 }
 
 
-/* Donut 2 */
-
 .donut2 {
     background: conic-gradient(
         #3b65df 0 45%,
@@ -362,10 +293,6 @@ header {
     );
 }
 
-
-/* =========================
-   Lists
-========================= */
 
 .list {
     flex: 1;
@@ -387,10 +314,6 @@ header {
     color: #777;
 }
 
-
-/* =========================
-   Buttons
-========================= */
 
 .card button {
     margin-top: 25px;
@@ -417,11 +340,6 @@ header {
     background: #7d92bb;
 }
 
-
-/* =========================
-   Reading
-========================= */
-
 .reading h2 {
     font-size: 22px;
 }
@@ -446,12 +364,6 @@ header {
     width: 100%;
     height: 180px;
 }
-
-
-/* =========================
-   Books
-========================= */
-
 .books-section {
     margin-top: 25px;
 }
@@ -516,10 +428,6 @@ header {
 }
 
 
-/* =========================
-   Footer
-========================= */
-
 .footer {
     margin-top: 30px;
 
@@ -556,11 +464,6 @@ header {
     color: #8b4de8;
 }
 
-
-/* =========================
-   Tablet
-========================= */
-
 @media (max-width: 1000px) {
 
     .sidebar {
@@ -576,11 +479,6 @@ header {
         display: none;
     }
 }
-
-
-/* =========================
-   Mobile
-========================= */
 
 @media (max-width: 750px) {
 
@@ -605,43 +503,25 @@ header {
         overflow-y: auto;
     }
 
-
-    /* Sidebar Open */
-
     .sidebar.show {
         left: 0;
     }
-
-
-    /* Header */
 
     header {
         padding: 15px;
     }
 
-
-    /* Content */
-
     .content {
         padding: 15px;
     }
-
-
-    /* Cards */
 
     .cards {
         grid-template-columns: 1fr;
     }
 
-
-    /* Header Right */
-
     .header-right {
         gap: 8px;
     }
-
-
-    /* Search */
 
     .search {
         width: 150px;
@@ -651,17 +531,11 @@ header {
         width: 100px;
     }
 
-
-    /* Menu */
-
     #menu {
         display: block;
 
         cursor: pointer;
     }
-
-
-    /* Footer */
 
     .footer {
         flex-direction: column;
@@ -671,11 +545,6 @@ header {
         text-align: center;
     }
 }
-
-
-/* =========================
-   Small Mobile
-========================= */
 
 @media (max-width: 500px) {
 

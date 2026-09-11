@@ -1,31 +1,17 @@
 const menu = document.getElementById("menu");
 const sidebar = document.querySelector(".sidebar");
 
-
-// ===============================
-// Sidebar Toggle
-// ===============================
-
 menu.addEventListener("click", function () {
 
     if (window.innerWidth <= 750) {
-
-        // Mobile
         sidebar.classList.toggle("show");
 
     } else {
-
-        // Desktop
         sidebar.classList.toggle("collapsed");
 
     }
 
 });
-
-
-// ===============================
-// Search Books
-// ===============================
 
 const search = document.getElementById("search");
 const books = document.querySelectorAll(".book");
@@ -50,27 +36,16 @@ search.addEventListener("input", function () {
     });
 
 });
-
-
-// ===============================
-// Sidebar Navigation
-// ===============================
-
 const navLinks = document.querySelectorAll(".sidebar nav a");
 
 navLinks.forEach(function (link) {
 
     link.addEventListener("click", function () {
-
-        // Remove active from all links
         navLinks.forEach(function (item) {
             item.classList.remove("active");
         });
 
-        // Add active to clicked link
         link.classList.add("active");
-
-        // Close sidebar on mobile
         if (window.innerWidth <= 750) {
             sidebar.classList.remove("show");
         }
@@ -79,21 +54,12 @@ navLinks.forEach(function (link) {
 
 });
 
-
-// ===============================
-// Handle Window Resize
-// ===============================
-
 window.addEventListener("resize", function () {
 
     if (window.innerWidth > 750) {
-
-        // Remove mobile class
         sidebar.classList.remove("show");
 
     } else {
-
-        // Remove desktop class
         sidebar.classList.remove("collapsed");
 
     }

@@ -14,4 +14,4 @@ document.addEventListener("DOMContentLoaded", function() {
             alert("Please enter email and password");
         }
     });
-});
+})
