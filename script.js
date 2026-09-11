@@ -1,14 +1,9 @@
-
-
 const menu = document.getElementById("menu");
 const sidebar = document.querySelector(".sidebar");
-
 
 menu.addEventListener("click", function () {
     sidebar.classList.toggle("show");
 });
-
-
 
 const search = document.getElementById("search");
 const books = document.querySelectorAll(".book");
@@ -39,22 +34,21 @@ const mainContent = document.querySelector(".content");
 
 if (btnAllBooks && mainContent) {
     btnAllBooks.addEventListener("click", function (event) {
-        event.preventDefault(); 
-        mainContent.innerHTML = "<h2>لیست همه کتاب‌ها</h2><p>این بخش مربوط به کتاب‌های کتابخانه است.</p>";
+        event.preventDefault();
+        mainContent.innerHTML = "<h2>All Books</h2><p>This section contains all books in the library.</p>";
     });
 }
 
 if (btnMembers && mainContent) {
     btnMembers.addEventListener("click", function (event) {
         event.preventDefault();
-        mainContent.innerHTML = "<h2>بخش اعضای کتابخانه</h2><p>لیست کاربران و اعضا در این بخش قرار می‌گیرد.</p>";
+        mainContent.innerHTML = "<h2>Library Members</h2><p></p>";
     });
 }
 
-// ۵. کارکرد دکمه Dashboard برای بازگشت به صفحه اصلی
 if (btnDashboard) {
     btnDashboard.addEventListener("click", function (event) {
         event.preventDefault();
-        location.reload(); // صفحه را رفرش می‌کند تا آمار اولیه برگردد
+        location.reload();
     });
 }

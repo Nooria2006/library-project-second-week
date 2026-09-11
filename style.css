@@ -160,9 +160,6 @@ header {
     font-size: 25px;
 }
 
-
-/* Cards */
-
 .cards {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -187,9 +184,6 @@ header {
     align-items: center;
     gap: 30px;
 }
-
-
-/* Donut */
 
 .donut {
     width: 170px;
